@@ -5,24 +5,27 @@ This project provides a way to convert sms from json format to a readable csv fo
 
 
 -----------------------
-Files & Use Case
+Files & DESCRIPTION
 -----------------------
 
-FILE                       DESCRIPTION
-android_json_to_csv.py   - Python program that converts Samsung SmartSwitch exported json file SMS data to csv file. All information is retained. 
-                           Ensure that the input file "sms_restore.json" is kept in the same directory as this script.
-                           Creates an output file "sms_restore.csv" containing sms data in csv format, in the same directory. Two extra columns are added in the output file for the dates to be displayed in human readable format, as the default date format is unix epoch. Data is sorted in ascending order by date, i.e. latest message appears at the top of the file.
-                           Python command to run file: "python3 android_json_to_csv.py"                       
-sms_restore.json         - Sample input file provided. Note that the names of contacts are not directly available in these files, only phone numbers are captured.
-sms_restore.csv          - csv format output file.
-android_vcf_csv.py       - Python program that converts vcf file format data to csv format. Multiple phone numbers for the same contact are displayed on separate rows. 
-                           Requires that the "Contacts.vcf" file is kept in the same directory as this python script.
-                           Creates an output file "Contacts.csv" containing contact data in csv format, in the same directory.
-                           This program exists solely to create phone numbers and names in csv formats which can aid in vlookups.
-                           Python command to run file: "python3 android_vcf_csv.py"                       
-Contacts.vcf             - Sample file with data of contacts in vcf format.
-Contacts.csv             - csv format output file of name, phone number and email. 
-
+- **android_json_to_csv.py**:
+  - Python program that converts Samsung SmartSwitch exported JSON file SMS data to CSV file. All information is retained. Ensure that the input file "sms_restore.json" is kept in the same directory as this script. Creates an output file "sms_restore.csv" containing SMS data in CSV format, in the same directory. Two extra columns are added in the output file for the dates to be displayed in human-readable format, as the default date format is Unix epoch. Data is sorted in ascending order by date, i.e., the latest message appears at the top of the file. Python command to run file: "python3 android_json_to_csv.py"
+  
+- **sms_restore.json**:
+  - Sample input file provided. Note that the names of contacts are not directly available in these files; only phone numbers are captured.
+  
+- **sms_restore.csv**:
+  - CSV format output file.
+  
+- **android_vcf_csv.py**:
+  - Python program that converts VCF file format data to CSV format. Multiple phone numbers for the same contact are displayed on separate rows. Requires that the "Contacts.vcf" file is kept in the same directory as this Python script. Creates an output file "Contacts.csv" containing contact data in CSV format, in the same directory. This program exists solely to create phone numbers and names in CSV formats which can aid in VLOOKUPs. Python command to run file: "python3 android_vcf_csv.py"
+  
+- **Contacts.vcf**:
+  - Sample file with data of contacts in VCF format.
+  
+- **Contacts.csv**:
+  - CSV format output file of name, phone number, and email.
+  
 
 -----------------------
 Additional Information
