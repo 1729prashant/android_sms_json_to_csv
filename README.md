@@ -1,6 +1,6 @@
 Background
 -----------------------
-This project provides a way to convert sms from json format to a readable csv format. This is specific to the json file created by Samsung's SmartSwitch app when backing up call logs and sms messages in Galaxy devices. This is not an exhaustive solution to retrieve all backup data from your Samsung/android device. This project has programs that work on clear text data only.
+This project provides a way to convert Android device SMS data from json format to a readable csv format. This is specific to the json file created by Samsung's SmartSwitch app when backing up call logs and sms messages in Galaxy devices. This is not an exhaustive solution to retrieve all backup data from your Samsung/android device. This project has programs that work on clear text data only.
 
 
 
